@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500&family=Noto+Serif+SC:wght@400&family=Saira&display=swap");
+body {
+  font-family: "Saira", "Noto Sans SC", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-image: url(https://img-cdn.haozi.xyz/2021/07/21/d187abc2084a333924f02eadf9382a82.jpg);
+  background-color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.bg-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(1.6px) brightness(108%) hue-rotate(15deg);
+  z-index: -1;
+}
+
+.app-main {
+  width: 67vw;
+}
+.app-main .mdui-card {
+  margin: 1em auto 1em;
+  background-color: rgba(255, 255, 255, 0.48);
+  border-radius: 0.72em;
+  backdrop-filter: blur(3.2px);
+}
+.app-main #app-form-card .mdui-card-content {
+  padding-top: 0;
+}
+
+.app-main #app-result-card .mdui-card-content {
+  font-family: "Noto Serif SC", serif;
+}
+
+.app-main #app-result-card .mdui-card-content #app-result {
+  user-select: all;
+}
+
+.app-main .mdui-btn {
+  opacity: 92%;
+}
+
+.app-main footer {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+  line-height: 1.2em;
+  font-size: 0.96em;
+  margin-top: 0.8em;
+}
+
+@media only screen and (max-width: 768px) {
+  .app-main {
+    width: 96vw;
+  }
+}
